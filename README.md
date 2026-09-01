@@ -16,10 +16,13 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Interest form
+## Reservation form → Notion
 
-The form posts to FormSubmit and delivers submissions by email. The first live
-submission sends a one-time activation email — click the link once and all
-future submissions are delivered automatically.
+"Reserve My Spot" submissions POST to `/api/reserve`, which creates a row in
+the **BC Website Leads** database in Notion. Two environment variables are
+required (Vercel → Project → Settings → Environment Variables, and `.env.local`
+for local dev):
 
-Live at: https://beatrice-commons.vercel.app
+- `NOTION_TOKEN` — internal integration secret from notion.so/profile/integrations
+  (the integration must be connected to the BC Website Leads database)
+- `NOTION_DATABASE_ID` — `3ce7b806467c806e935fe20efc312b8f`

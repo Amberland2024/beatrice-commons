@@ -2,12 +2,9 @@
 
 import { useState } from "react";
 
-// Interest form — posts to FormSubmit's AJAX endpoint so submissions land in
-// email with zero backend setup. The first live submission triggers a one-time
-// activation email to the address below; click the link in it once and every
-// submission after that is delivered automatically.
-const FORM_ENDPOINT =
-  "https://formsubmit.co/ajax/alexanderbcarlson1@gmail.com";
+// Reservation form — posts to /api/reserve, which writes each submission
+// into the "BC Website Leads" database in Notion.
+const FORM_ENDPOINT = "/api/reserve";
 
 export default function InterestForm() {
   const [status, setStatus] = useState("idle"); // idle | sending | ok | err
@@ -21,14 +18,8 @@ export default function InterestForm() {
     try {
       const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          ...data,
-          _subject: "New reservation-list signup — Beatrice Commons",
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("Request failed");
       form.reset();

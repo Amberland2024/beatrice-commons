@@ -528,7 +528,7 @@ h2 {
 
 .broker-photo img {
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center;
 }
 
 .broker-card h3 {
