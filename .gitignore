@@ -1,0 +1,27 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# raw marketing assets (optimized copies live in public/images)
+/beatrice commons assets/
+/Amberland Logos/
+/7D53E413-7FFE-440F-9460-FD4F1A574A2B.jpg
+
+# debug
+npm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
