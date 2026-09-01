@@ -42,7 +42,8 @@ export default function InterestForm() {
     <div className="form-card">
       <h2>Join the Reservation List</h2>
       <p className="sub">
-        Be first in line for floor plans, pricing, and the April move-in wave.
+        Be first in line for floor plans, pricing, and the spring 2027
+        move-in wave.
       </p>
       <form onSubmit={handleSubmit}>
         <div className="field">

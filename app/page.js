@@ -50,7 +50,8 @@ export default function Home() {
             </h1>
             <p className="lede">
               Beatrice Commons brings 32 new-construction, single-level homes to
-              401 S 22nd Street — with the first eight homes expected in April.
+              401 S 22nd Street — with the first eight homes arriving spring
+              2027.
             </p>
             <div className="hero-ctas">
               <a href="#reserve" className="btn">
@@ -75,7 +76,7 @@ export default function Home() {
               <span>starting price</span>
             </div>
             <div className="stat">
-              <strong>April</strong>
+              <strong>Spring 2027</strong>
               <span>first homes ready</span>
             </div>
             <div className="stat">
