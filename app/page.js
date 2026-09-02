@@ -14,9 +14,15 @@ export default function Home() {
     <>
       <header className="site">
         <div className="wrap nav-row">
-          <div className="brand">
-            BEATRICE<span> COMMONS</span>
-          </div>
+          <a href="#" className="site-logo" aria-label="Beatrice Commons — Live Well. Together.">
+            <Image
+              src="/images/bc-logo.png"
+              alt="Beatrice Commons — Live Well. Together."
+              width={182}
+              height={64}
+              priority
+            />
+          </a>
           <nav className="nav-links">
             <a href="#homes">The Homes</a>
             <a href="#community">Community</a>
@@ -261,6 +267,15 @@ export default function Home() {
 
         {/* RESERVATION FORM + BROKER */}
         <section className="form-section" id="reserve">
+          <div className="wrap ethos-wrap">
+            <Image
+              src="/images/bc-ethos.png"
+              alt=""
+              width={190}
+              height={67}
+              className="ethos-mark"
+            />
+          </div>
           <div className="wrap reserve-grid">
             <div className="broker-card">
               <div className="broker-photo">
@@ -290,9 +305,13 @@ export default function Home() {
       <footer className="site">
         <div className="wrap footer-row">
           <div>
-            <div className="brand brand-footer">
-              BEATRICE<span> COMMONS</span>
-            </div>
+            <Image
+              src="/images/bc-logo-white.png"
+              alt="Beatrice Commons — Live Well. Together."
+              width={220}
+              height={77}
+              className="footer-brand"
+            />
             <p>401 S 22nd St, Beatrice, NE 68310</p>
           </div>
           <div className="footer-right">

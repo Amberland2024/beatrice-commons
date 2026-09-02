@@ -7,6 +7,7 @@
   --line: #e2ddd3;
   --brass: #a8853f;
   --brass-dark: #8c6d30;
+  --maroon: #330000;
 }
 
 * {
@@ -73,6 +74,16 @@ header.site {
 
 .brand span {
   color: var(--brass);
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.site-logo img {
+  height: auto;
 }
 
 .nav-links {
@@ -230,6 +241,12 @@ h2 {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 14px;
+  color: var(--maroon);
+}
+
+.community h2,
+.community-copy h2 {
+  color: #fff;
 }
 
 .section-lede {
@@ -683,6 +700,21 @@ footer.site {
 
 .footer-right {
   text-align: right;
+}
+
+.footer-brand {
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.ethos-wrap {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ethos-mark {
+  height: auto;
+  opacity: 0.85;
 }
 
 .footer-logo {
