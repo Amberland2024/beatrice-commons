@@ -309,14 +309,105 @@ h2 {
   color: var(--ink) !important;
 }
 
-.coming-soon {
-  margin-top: 32px;
-  padding: 16px 20px;
-  background: var(--stone);
+.plan-details {
+  margin-top: 18px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.plan-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--brass-dark);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.plan-details summary::before {
+  content: "+ ";
+}
+
+.plan-details[open] summary::before {
+  content: "\2212 ";
+}
+
+.plan-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.plan-details img {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  font-size: 0.95rem;
+  background: #fff;
+}
+
+/* ---------- interiors ---------- */
+.interiors {
+  padding: 88px 0;
+  background: var(--card);
+  border-top: 1px solid var(--line);
+}
+
+.interior-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+}
+
+.interior-img {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.interior-img img {
+  object-fit: cover;
+}
+
+.render-note {
+  margin-top: 14px;
+  font-size: 0.8rem;
   color: var(--ink-soft);
-  text-align: center;
+}
+
+/* ---------- lifestyle ---------- */
+.lifestyle {
+  padding: 88px 0;
+}
+
+.life-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 8px;
+}
+
+.life-tile {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.life-tile img {
+  object-fit: cover;
+}
+
+/* ---------- grass band ---------- */
+.grass-band {
+  position: relative;
+  height: 240px;
+}
+
+.grass-band img {
+  object-fit: cover;
+  object-position: center 60%;
 }
 
 /* ---------- craft ---------- */
@@ -758,8 +849,14 @@ footer.site {
   .finance-cards,
   .location-grid,
   .reserve-grid,
+  .interior-grid,
+  .life-grid,
   .craft-grid {
     grid-template-columns: 1fr;
+  }
+
+  .grass-band {
+    height: 150px;
   }
 
   .hero {

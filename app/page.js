@@ -112,13 +112,32 @@ export default function Home() {
                   />
                 </div>
                 <div className="plan-body">
-                  <h3>3 Bed &middot; 2 Bath</h3>
-                  <p className="plan-tag">with full basement</p>
+                  <h3>The Washburn</h3>
+                  <p className="plan-tag">
+                    3 or 4 Bed &middot; 2 Bath &middot; 1,989 sq ft
+                  </p>
                   <p>
-                    Room to grow: three bedrooms, two full baths, and a full
-                    basement for storage, a rec room, or future finish.
+                    Vaulted main level with a bed/office, plus a finished lower
+                    level: primary suite, second bedroom, full bath, and a
+                    flex bedroom/living room offered as an unfinished buyer
+                    option.
                   </p>
                   <p className="plan-count">4 available in the first release</p>
+                  <details className="plan-details">
+                    <summary>View floor plan</summary>
+                    <Image
+                      src="/images/plan-washburn-main.jpg"
+                      alt="The Washburn main level floor plan"
+                      width={1400}
+                      height={1812}
+                    />
+                    <Image
+                      src="/images/plan-washburn-lower.jpg"
+                      alt="The Washburn lower level floor plan"
+                      width={1400}
+                      height={1812}
+                    />
+                  </details>
                 </div>
               </article>
               <article className="plan-card">
@@ -131,19 +150,62 @@ export default function Home() {
                   />
                 </div>
                 <div className="plan-body">
-                  <h3>2 Bed &middot; 1 Bath</h3>
-                  <p className="plan-tag">efficient single-level living</p>
+                  <h3>The Shaw</h3>
+                  <p className="plan-tag">
+                    2 Bed &middot; 2 Bath &middot; 1,385 sq ft
+                  </p>
                   <p>
-                    Right-sized and low-maintenance: two bedrooms and a full
-                    bath, all on one level with an attached garage.
+                    True single-level living: primary suite plus a bed/office,
+                    two full baths, vaulted living room, kitchen with dine-in
+                    island, and two patios.
                   </p>
                   <p className="plan-count">4 available in the first release</p>
+                  <details className="plan-details">
+                    <summary>View floor plan</summary>
+                    <Image
+                      src="/images/plan-shaw.jpg"
+                      alt="The Shaw floor plan"
+                      width={1400}
+                      height={1812}
+                    />
+                  </details>
                 </div>
               </article>
             </div>
-            <p className="coming-soon">
-              Detailed floor plans coming soon — join the reservation list and
-              we&apos;ll send them to you first.
+          </div>
+        </section>
+
+        {/* INTERIORS */}
+        <section className="interiors">
+          <div className="wrap">
+            <span className="eyebrow">Inside the Homes</span>
+            <h2>Vaulted, skylit, and built around daily life.</h2>
+            <p className="section-lede">
+              Open kitchens with dine-in islands, vaulted living rooms washed
+              in natural light, and layouts that flow from garage to mudroom
+              to kitchen the way real life actually moves.
+            </p>
+            <div className="interior-grid">
+              <div className="interior-img">
+                <Image
+                  src="/images/interior-living.jpg"
+                  alt="Vaulted living room with skylights at Beatrice Commons"
+                  fill
+                  sizes="(max-width: 800px) 100vw, 60vw"
+                />
+              </div>
+              <div className="interior-img">
+                <Image
+                  src="/images/interior-kitchen.jpg"
+                  alt="Open kitchen and dining area at Beatrice Commons"
+                  fill
+                  sizes="(max-width: 800px) 100vw, 40vw"
+                />
+              </div>
+            </div>
+            <p className="render-note">
+              Interior renderings by Sinclair Hille Architects. Finishes may
+              vary.
             </p>
           </div>
         </section>
@@ -195,6 +257,40 @@ export default function Home() {
           </div>
         </section>
 
+        {/* LIFESTYLE */}
+        <section className="lifestyle">
+          <div className="wrap">
+            <span className="eyebrow">Live Well. Together.</span>
+            <h2>Room for the life you want.</h2>
+            <div className="life-grid">
+              <div className="life-tile">
+                <Image
+                  src="/images/life-living.jpg"
+                  alt="Bright, calm living room"
+                  fill
+                  sizes="(max-width: 800px) 100vw, 33vw"
+                />
+              </div>
+              <div className="life-tile">
+                <Image
+                  src="/images/life-garden.jpg"
+                  alt="Patio garden with potted flowers"
+                  fill
+                  sizes="(max-width: 800px) 100vw, 33vw"
+                />
+              </div>
+              <div className="life-tile">
+                <Image
+                  src="/images/life-detail.jpg"
+                  alt="Styled coffee table detail"
+                  fill
+                  sizes="(max-width: 800px) 100vw, 33vw"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* LOCATION */}
         <section className="location" id="location">
           <div className="wrap">
@@ -224,6 +320,16 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* GRASS DIVIDER */}
+        <div className="grass-band" aria-hidden="true">
+          <Image
+            src="/images/grass-band.jpg"
+            alt=""
+            fill
+            sizes="100vw"
+          />
+        </div>
 
         {/* FINANCING */}
         <section className="financing" id="financing">
