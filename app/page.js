@@ -105,6 +105,37 @@ export default function Home() {
               <article className="plan-card">
                 <div className="plan-img">
                   <Image
+                    src="/images/exterior-white.jpg"
+                    alt="White farmhouse-style duplex home at Beatrice Commons"
+                    fill
+                    sizes="(max-width: 800px) 100vw, 50vw"
+                  />
+                </div>
+                <div className="plan-body">
+                  <h3>The Shaw</h3>
+                  <p className="plan-tag">
+                    2 Bed &middot; 2 Bath &middot; 1,385 sq ft
+                  </p>
+                  <p>
+                    True single-level living: primary suite plus a bed/office,
+                    two full baths, vaulted living room, kitchen with dine-in
+                    island, and two patios.
+                  </p>
+                  <p className="plan-count">4 available in the first release</p>
+                  <details className="plan-details">
+                    <summary>View floor plan</summary>
+                    <Image
+                      src="/images/plan-shaw.jpg"
+                      alt="The Shaw floor plan"
+                      width={1400}
+                      height={1812}
+                    />
+                  </details>
+                </div>
+              </article>
+              <article className="plan-card">
+                <div className="plan-img">
+                  <Image
                     src="/images/exterior-front.jpg"
                     alt="White duplex exterior with black brick accents at Beatrice Commons"
                     fill
@@ -140,37 +171,6 @@ export default function Home() {
                   </details>
                 </div>
               </article>
-              <article className="plan-card">
-                <div className="plan-img">
-                  <Image
-                    src="/images/exterior-white.jpg"
-                    alt="White farmhouse-style duplex home at Beatrice Commons"
-                    fill
-                    sizes="(max-width: 800px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="plan-body">
-                  <h3>The Shaw</h3>
-                  <p className="plan-tag">
-                    2 Bed &middot; 2 Bath &middot; 1,385 sq ft
-                  </p>
-                  <p>
-                    True single-level living: primary suite plus a bed/office,
-                    two full baths, vaulted living room, kitchen with dine-in
-                    island, and two patios.
-                  </p>
-                  <p className="plan-count">4 available in the first release</p>
-                  <details className="plan-details">
-                    <summary>View floor plan</summary>
-                    <Image
-                      src="/images/plan-shaw.jpg"
-                      alt="The Shaw floor plan"
-                      width={1400}
-                      height={1812}
-                    />
-                  </details>
-                </div>
-              </article>
             </div>
           </div>
         </section>
@@ -191,7 +191,7 @@ export default function Home() {
                   src="/images/interior-living.jpg"
                   alt="Vaulted living room with skylights at Beatrice Commons"
                   fill
-                  sizes="(max-width: 800px) 100vw, 60vw"
+                  sizes="(max-width: 1120px) 100vw, 1072px"
                 />
               </div>
               <div className="interior-img">
@@ -199,7 +199,7 @@ export default function Home() {
                   src="/images/interior-kitchen.jpg"
                   alt="Open kitchen and dining area at Beatrice Commons"
                   fill
-                  sizes="(max-width: 800px) 100vw, 40vw"
+                  sizes="(max-width: 1120px) 100vw, 1072px"
                 />
               </div>
             </div>
@@ -217,12 +217,14 @@ export default function Home() {
               <span className="eyebrow">Built to Last</span>
               <h2>Quality you can see in the details.</h2>
               <ul className="craft-list">
-                <li>Class 4 impact-resistant asphalt shingles</li>
-                <li>Brick veneer with horizontal lap siding</li>
-                <li>Attached garage with 8&apos; door on every home</li>
-                <li>Energy-efficient vinyl windows</li>
-                <li>Single-level layouts — no stairs to daily living</li>
-                <li>Private entrances, driveways, and yards</li>
+                <li>Brick and cement board facade materials</li>
+                <li>Attached garage</li>
+                <li>Energy-efficient appliances, operable windows</li>
+                <li>Solid surface counters and shaker cabinets</li>
+                <li>Well-insulated, efficient homes</li>
+                <li>Ground-level bedroom(s) — no stairs to daily living</li>
+                <li>Expandable to meet your needs</li>
+                <li>Public and private patios that facilitate your mood</li>
               </ul>
             </div>
             <div className="craft-img">

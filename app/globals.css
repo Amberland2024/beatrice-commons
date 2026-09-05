@@ -355,13 +355,13 @@ h2 {
 
 .interior-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr;
   gap: 22px;
 }
 
 .interior-img {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 2 / 1;
   border-radius: 12px;
   overflow: hidden;
 }
